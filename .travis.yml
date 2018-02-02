@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '8'
+cache:
+  directories:
+  - node_modules
+before_install:
+- yarn install
+script: yarn test
+deploy:
+  provider: npm
+  email: max@studio107.ru
+  api_key:
+    secure: IAkI8jWaAaK+B51Hfmajl05pnNNwkR7TsmxenoCtYuvriQt/iIU3OEQA3bydwJyLRJnMi2Xlyj2H6ulMRX06DOWz31a9nIgMUcSH45eX9qMnKpwm24dWrDxjs8LGMw9NItrpwxQfdG3K+TnceRfMZ60fEZ4R1prwMBL/3RNH82DAEB/x+BwpGxpLhXPQwbsO19fJgZuF4K5qkCPyyr6Lp5DvXHoXE4327NCDW/zsP2gXQSDwm7sB41pLOOBmNLwDjBQWhnXJWpzUl5kpBMflfu4VnExy6AUARez+DD/nGl/Se+L/xWr6GvpfxHKsCbBkn8uxaDUSbXjgO2upobqahuDb6FlJI+sAl0PtGw39OJE9Rzs8DTKltplkc4hqywRpOb6GIDHmi8LGYscJ+ewPP2vIv0YmheKXDSIFwWcRVxbF4NZYGo1gkikdRwOftvZSpAi4gvGu2ZA7yrfeJ95YsVfgfUTHwfulEcUhLZL/2TvQdCAxQ14mnDEtBPRqc7juxlgHuBbXzgklMEOMYLBv3j0G/0lf0CAwjM5KBylp50sHpGZA30wyGYJ3N3GUiI2OX3ZY6lzaiFiqj8XyBUuWXNvNHYSSDfkuKVfTYEER/tRfG5x5mfFsvUqSyb856Yco44IsonLrfS2PVAuf6G9bykU6WzxW/JGyaka7Ij0xkOg=
+  on:
+    tags: true
+    repo: studio107/flexy-functions

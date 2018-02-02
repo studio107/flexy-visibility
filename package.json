@@ -1,0 +1,19 @@
+{
+    "name": "flexy-visibility",
+    "license": "MIT",
+    "version": "1.0.0",
+    "devDependencies": {
+        "jest": "^22.1.4",
+        "node-sass": "^4.7.2",
+        "prettier": "^1.9.2",
+        "sass-true": "^3.0.2"
+    },
+    "scripts": {
+        "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.scss\"",
+        "test": "jest"
+    },
+    "dependencies": {
+        "flexy-breakpoint": "^1.0.0",
+        "flexy-functions": "^1.0.3"
+    }
+}
