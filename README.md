@@ -91,3 +91,12 @@ Hide for current breakpoint and up
   }
 }
 ```
+
+# classes
+
+```html
+<div class="b-hide b-hide_large_up"></div>
+
+<div class="b-show b-show_large_up"></div>
+<div class="b-visible b-visible_large_up"></div>
+```
